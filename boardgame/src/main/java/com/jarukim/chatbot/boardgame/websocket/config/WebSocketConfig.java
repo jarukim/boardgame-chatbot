@@ -1,4 +1,4 @@
-package com.jarukim.chatbot.boardgame.config;
+package com.jarukim.chatbot.boardgame.websocket.config;
 
 import com.jarukim.chatbot.boardgame.websocket.WebSocketHandler;
 import org.springframework.context.annotation.Bean;
@@ -15,6 +15,7 @@ public class WebSocketConfig implements WebSocketConfigurer {
         registry
                 .addHandler(signalingSocketHandler(), "/chatbot")
                 .setAllowedOrigins("*");
+
     }
 
     @Bean

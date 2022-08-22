@@ -1,0 +1,12 @@
+spring:
+  thymeleaf:
+    cache: false
+    check-template: true
+    prefix: classpath:templates/
+    suffix: .html
+  web:
+    resources:
+      static-locations: classpath:static/
+  devtools:
+    livereload:
+      enabled: true
